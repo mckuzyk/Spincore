@@ -50,7 +50,7 @@ def close():
 def dc(*channels):
 	_ch = 0
 	for i in channels:
-		_ch += _ch
+		_ch += i
 	_init()
 	sp.pb_start_programming(sp.PULSE_PROGRAM)
 	sp.pb_inst_pbonly64(_ch, sp.Inst.STOP, 0, 1*sp.us)
